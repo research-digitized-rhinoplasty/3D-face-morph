@@ -57,5 +57,5 @@ Having a negative value for a starting point might be useful if your original 3D
 
 After the user enters the above values for a landmark, he/she can click the 'Add Modification' button. This will add the modifications for the landmark into a table. Once the user enters values for all the landmarks he/she wants to modify, he/she can click on the ‘Make and Download the Configuration File’ button to download. The configuration JSON file can then be used as an input for the 3D morphing Phyton code.
 
-The webpage to create a configuration JSON file can be found here: https://tinysoccerball.github.io/
+The webpage to create a configuration JSON file can be found here: https://research-digitized-rhinoplasty.github.io/3D-face-morph/
 
