@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://research-digitized-rhinoplasty.github.io/3D-face-morph/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>3D Model Morphing and Generation | 3D-face-morph</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="3D Model Morphing and Generation">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Programmatically morph 3D models of faces">
+<meta property="og:description" content="Programmatically morph 3D models of faces">
+<link rel="canonical" href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">
+<meta property="og:url" content="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">
+<meta property="og:site_name" content="3D-face-morph">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="3D Model Morphing and Generation">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Programmatically morph 3D models of faces","headline":"3D Model Morphing and Generation","name":"3D-face-morph","url":"https://research-digitized-rhinoplasty.github.io/3D-face-morph/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./3D Model Morphing and Generation _ 3D-face-morph_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/3D-face-morph/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="">
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">3D-face-morph</a></h1>
+      
+
+      <h1 id="3d-model-morphing-and-generation">Running Instructions for 3D Face Morph Software</h1>
+
+
+<h2 id="running-instructions">Running Instructions<a class="anchorjs-link " href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/#running-instructions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Download the code from this GitHub and then go to the directory where you keep the code. The canvas.blend file, Morphed3DGenerator.py file, and your 3D models to morph should be in the same directory.</p>
+<ul>
+  <li>The canvas.blend is a blank blender file. To prepare this, simply open blender, delete the default cube, light source, and camera (and anything else present) and save the .blend file. This will serve as our blank canvas. This file is provided on this page for your convenience.</li>
+  <li>The Morphed3DGenerator.py is phyton code that accomplishes the morphing.</li>
+</ul>
+
+<h3 id="windows-instructions-using-the-command-line-on-windows">Windows Instructions (using the command line on Windows)<a class="anchorjs-link " href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/#windows-instructions-using-the-command-line-on-windows" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"C:\Users\path\to\blender\blender.lnk" "C:\Users\path\to\canvas.blend" --background --python "C:\Users\path\to\Morphed3DGenerator.py" 
+</code></pre></div></div>
+
+<h3 id="mac-instructions-using-the-terminal-app-on-mac">Mac Instructions (using the Terminal app on Mac)<a class="anchorjs-link " href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/#mac-instructions-using-the-terminal-app-on-mac" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Applications/Blender.app/Contents/MacOS/Blender canvas.blend --background --python Morphed3DGenerator.py
+</code></pre></div></div>
+
+<p>When the above command is executed, the program will prompt you to enter the name of the configuration JSON file as follows: “Please enter the path to the JSON file:” Then enter the name of the JSON file that has the modifications desired.</p>
+
+<p>You can use the ‘CreateMorphingConfigurations.html’ file to prepare the JSON file that includes the modifications. A sample JSON file is given (Facial-Deformities.json). See the instructions about how to create a configuration JSON file.</p>
+
+<p>Note:
+Due to the huge number of outputs and size of the individual outputs that would be created, you may have to cancel the execution at some point with CTRL+C. If you do this while a file is being exported, it can lead to an incomplete file. Such a file can be disregarded and discarded.</p>
+
+
+
+      
+    </div>
+    <script src="./3D Model Morphing and Generation _ 3D-face-morph_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

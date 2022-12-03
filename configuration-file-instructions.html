@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://research-digitized-rhinoplasty.github.io/3D-face-morph/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>3D Model Morphing and Generation | 3D-face-morph</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="3D Model Morphing and Generation">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Programmatically morph 3D models of faces">
+<meta property="og:description" content="Programmatically morph 3D models of faces">
+<link rel="canonical" href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">
+<meta property="og:url" content="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">
+<meta property="og:site_name" content="3D-face-morph">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="3D Model Morphing and Generation">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Programmatically morph 3D models of faces","headline":"3D Model Morphing and Generation","name":"3D-face-morph","url":"https://research-digitized-rhinoplasty.github.io/3D-face-morph/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./3D Model Morphing and Generation _ 3D-face-morph_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/3D-face-morph/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="">
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/">3D-face-morph</a></h1>
+
+<h2 id="how-to-create-a-configuration-json-file">How to Create a Configuration JSON file<a class="anchorjs-link " href="https://research-digitized-rhinoplasty.github.io/3D-face-morph/#how-to-create-a-configuration-json-file" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>The CreateMorphingConfigurations.html page is used to generate the instructions JSON file. The configuration JSON file is given to the Python script to generate modified 3D models. An example JSON file is provided with the name Facial-Deformities.json. Below is a screenshot of the CreateMorphingConfigurations.html page:</p>
+
+<p>========
+<img src="./3D Model Morphing and Generation _ 3D-face-morph_files/190245090-75241145-1a97-4ae1-a609-eb7168d77769.png" alt="MicrosoftTeams-image (1)">
+========</p>
+
+<p>The user needs to enter the names of the model (.obj) file in the ‘Model Name’ textbox. The names of the model (.obj) file and the .json file that contains landmark locations should match and be in the same directory. For example, Sarah.obj and Sarah.json. In this case, you would input “Sarah” as the model name.</p>
+
+<p>The falloff type specifies how the area around the landmark you are manipulating will be affected by your modification. The options for the falloff type are smooth, sphere, and inverse square.</p>
+
+<p>The transformation type determines how you manipulate the point. The options are translation and scale. The translation is a shift in 3D space (means addition), while the scale is a multiplier (a value of 1 means no change in scale) that is applied to the distance between the landmark and the origin on a given axis.</p>
+
+<p>The influence radius represents how far the manipulation will be effective around the landmark.</p>
+
+<p>The landmark abbreviation represents the landmark you want to manipulate. You must have the location of the landmark included in the model’s corresponding json file. For example, if the user enters ‘prn’ into the landmark abbreviation textbox, there must be ‘prn’ (pronasale) listed in the json file and it should have values for “xVal”, “yVal”, and “zVal” tags in the json file. The xVal, yVal, ZVal values of a landmark specify the current location of the landmark.</p>
+
+<p>If the landmark is a dual landmark (has a left or right corresponding landmark), then select ‘Yes’ for ‘Is dual landmark’ and then enter dual landmark’s abbreviation. An example of a dual landmark is alar crease - left (ac_l) and its corresponding landmark is alar crease - right (ac_r). Examples of landmarks that are not dual are pronasale/tip (prn), glabella (g), nasion/radix (r).
+Users can enter the number of modifications desired for the landmark into the textbox ‘The number of iterations for the landmark.’ Each of the modifications will result in a new morphed 3d model.</p>
+
+<p>Starting Point Adjustment X, Y and Z determines what will be added to the initial location of the landmark’s X, Y, and Z location. The adjustment values can be negative. For example, if the xVal is 75 in the JSON file and starting point adjustment for X is -10, then -10 will be added to 75 to make the starting point of the X value 65.</p>
+
+<p>The values entered into the ‘Magnitude of changes at each iteration’ textbox are added to the previous iteration’s location. For example, if the xVal for prn in the JSON file is 75, the number of iterations is 3, starting point adjustment for X is -10, and the magnitude of changes at each iteration is 10. Then three new 3D models will be created with X values 65, 75, and 85.</p>
+
+<p>Having a negative value for a starting point might be useful if your original 3D model has the x, y, z locations of a 3D model that represents the average measurements. The starting point of the values can be used to move the measurements toward the boundaries of the normal distribution by using -3 times the standard deviation as its starting point, having the magnitude of changes as the standard deviation and number of modifications as seven.</p>
+
+<p>After the user enters the above values for a landmark, he/she can click the ‘Add Modification’ button. This will add the modifications for the landmark into a table. Once the user enters values for all the landmarks he/she wants to modify, he/she can click on the ‘Make and Download the Configuration File’ button to download. The configuration JSON file can then be used as an input for the 3D morphing Phyton code.</p>
+
+      
+    </div>
+    <script src="./3D Model Morphing and Generation _ 3D-face-morph_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
