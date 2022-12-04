@@ -46,12 +46,21 @@
             <p>You can submit your solution for this test dataset. [PLACE the TEST DATASET]</p>
             
             <p>Your submission needs to be in a csv format and have the a format similar to this <a href="sample-benchmark.csv">sample csv file</a></p>
-        
+        <br>
+            <br>
         <p>
         Select and then upload your csv file that includes your solution: <input type="file" id="myFile">
             </p>
         <script src="mae.js"></script>
-            <p>Your mean absolute error score: <span id="MAE"></span></p>
-        
+            <p>Your <b>mae</b> score will be displayed here: <span id="MAE"></span></p>
+        <br>
+            <br>
+                    <p>
+If you would like to submit your score to be displayed on the list, please enter the following and then submit: <br>
+    <input type="text" id="name" name="name" placeholder = "Your team's name"><br>
+    <input type="text" id="url" name="url" placeholder = "Your website"><br>
+    <input type="text" id="desc" name="desc" placeholder = "Description about your solution"><br>
+    <button onclick="submitScore()">Submit Your Score</button>
+            </p>
     </body>
     </html>
