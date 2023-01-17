@@ -1,7 +1,8 @@
 ## 3D model Datasets
-The 3D model datasets can be found here:
+The 3D model datasets can be found here (3D Dataset was partinioned into two due to GitHub size limits):
 - Male Dataset: https://github.com/research-digitized-rhinoplasty/3D-face-morph-dataset-male
 - Female Dataset: https://github.com/research-digitized-rhinoplasty/3D-face-morph-dataset-female
+
 
 # 3D Model Morphing and Generation Software
 This software can be used to morph 3D models (.obj format) and create new morphed 3D models in bulk. We use the software to morph 3D models of facial scans however it should work on any 3D models.
