@@ -1,5 +1,5 @@
 ## 3D model Datasets
-The 3D model datasets can be found here (3D Dataset was partinioned into two due to GitHub size limits):
+The 3D model datasets can be found here (3D Dataset was partitioned into two due to GitHub size limits):
 - Male Dataset: https://github.com/research-digitized-rhinoplasty/3D-face-morph-dataset-male
 - Female Dataset: https://github.com/research-digitized-rhinoplasty/3D-face-morph-dataset-female
 
