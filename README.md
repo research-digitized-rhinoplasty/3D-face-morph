@@ -64,3 +64,7 @@ After the user enters the above values for a landmark, he/she can click the 'Add
 
 The webpage to create a configuration JSON file can be found here: https://research-digitized-rhinoplasty.github.io/3D-face-morph/
 
+
+This study has been published in IEEE Access, please use the following to cite:
+
+- Topsakal, O., Glinton, J., Akbas, M. I., & Celikoyar, M. M. (2024). Open-Source 3D Morphing Software for Facial Plastic Surgery and Facial Landmark Detection Research and Open Access Face Data Set Based on Deep Learning (Artificial Intelligence) Generated Synthetic 3D Models. Facial Plastic Surgery & Aesthetic Medicine, 26(2), 152–159. [doi:10.1089/fpsam.2023.0030] (https://doi.org/10.1089/fpsam.2023.0030)
